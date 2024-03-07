@@ -1,0 +1,133 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.navigaton_bar{
+	background: #0082e6;
+	height: 80px;
+	width: 100%;
+	/* padding:0px 50px 0px 100px; */
+	padding-left: 100px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.logo{
+	color: white;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.navigaton_bar ul {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	
+
+}
+.navigaton_bar ul li{
+	list-style: none;
+	border-bottom: 2px solid transparent;
+}
+
+.navigaton_bar ul li a{
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.navigaton_bar ul li:hover {
+	border-bottom: 2px solid white;
+/* background: #1b9bff; */
+transition: 0.2s ease-in;
+}
+
+.check_btn{
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+
+	font-size: 30px;
+	color: white;
+	display: none;
+	
+}
+.check_btn label i{
+	cursor:pointer;
+}
+
+.check_box{
+	display: none;
+	cursor: pointer;
+}
+
+
+@media (max-width:952px){
+
+	.navigaton_bar{
+		padding-left: 50px;
+	}
+	.navigaton_bar ul li a{
+	font-size: 16px;
+	}
+}
+
+
+
+@media(max-width:858px){
+	.navigaton_bar{
+		display: block;
+	
+	}
+	.logo{
+		position: absolute;
+		top: 20px;
+	}
+	.check_btn{
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 10px;
+	}
+	
+	.navigaton_bar ul{
+	
+		background: #2c3e50;
+		position: absolute;
+		top: 80px;
+		width: 100%;
+		left: -100%;
+
+		transition: all 0.5s ease;
+		
+		display: flex;
+		flex-direction: column;	
+		text-align: center;
+	}
+
+	.navigaton_bar ul li{
+		display: block;
+		line-height: 50px;
+	}
+	
+	.navigaton_bar ul li a{
+		font-size: 20px;
+	}
+	
+	#check:checked ~ .navigaton_bar ul{
+		
+		left: 0px;
+		transition: all 0.5s ease;
+		
+		
+	}
+
+}
+

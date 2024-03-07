@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREDICTION</title>
+</head>
+<body bgcolor="#a3cfb4">
+    <center>
+        <h1>PREDICTION:</h1>
+        {% if data == 0 %}
+        <h1>A per the data provided by you 
+            you don't have any chance of diabetic
+        </h1>
+        {% comment %} <img src="static/setosa.jpg" alt="setosa"> {% endcomment %}
+        {% else %}
+        <h1>you have chance of diabetic</h1>
+        {% comment %} <img src="static/versi.jpg" alt="versicolor"> {% endcomment %}
+        {% endif %}
+        <br><br>
+        <a href="/">Go back to home page</a>
+    </center>
+</body>
+</html>

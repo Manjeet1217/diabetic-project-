@@ -1,0 +1,131 @@
+/* universal css  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* wrapper class */
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    
+}
+
+/* heading here */
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    gap: 15px;
+    margin: 25px;
+}
+
+/* form css start here */
+
+.data_input{
+    width: 50vw;
+    
+}
+
+.tabcontent{
+    padding: 40px 100px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* inside the form item  */
+.form-group{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.form-group label {
+	font-size: 20px;
+}
+
+.form-group input{
+	padding:8px;
+	color: #938c8c;
+}
+
+ .form-group input:focus{
+	color: #000;
+}
+
+/* submit button */
+
+.submit_button{
+    display: flex;
+    justify-content: center;
+}
+
+button
+{	
+	color: #fff;
+	background-color: #5a5a5a;
+	border-radius: 3px;
+	padding: 15px 40px;
+	letter-spacing: 0.9px;
+	text-decoration: none;
+	font-size: 16px;
+	box-shadow: 0px 1px 3px 0px #5a5a5a;
+	margin-top: 15px;
+}
+
+/* responsiveness */
+
+
+/* screen 1 */
+
+@media(max-width:925px){
+    .data_input{
+        width: 80vw;
+        
+    }
+
+    .tabcontent{
+        padding: 20px 25px;
+    }
+   .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   } 
+
+   .form-group label{
+    font-size: 15px;
+   }
+
+   button{
+    padding:10px 30px ;
+   }
+}
+
+
+/* screen 2 */
+
+
+@media(min-width:925px){
+    .tabcontent{
+        padding: 20px 25px;
+    }
+}
+
+/* screen 3 */
+
+@media(min-width:1200px){
+    .data_input{
+        width: 750px;
+        
+    }
+}
