@@ -1,3 +1,5 @@
+/* this is the css of navigation bar  */
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -69,6 +71,8 @@ transition: 0.2s ease-in;
 }
 
 
+/* css for responsive start here */
+
 @media (max-width:952px){
 
 	.navigaton_bar{
@@ -80,7 +84,7 @@ transition: 0.2s ease-in;
 }
 
 
-
+/*
 @media(max-width:858px){
 	.navigaton_bar{
 		display: block;
@@ -130,4 +134,4 @@ transition: 0.2s ease-in;
 	}
 
 }
-
+*/
